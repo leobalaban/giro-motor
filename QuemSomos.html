@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <style>
+        .equipe {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .pessoa {
+            flex: 1 1 280px;
+            max-width: 420px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            border-top: 5px solid #d7192d;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .pessoa img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #15181d;
+        }
+
+        #missao {
+            background-color: #15181d;
+            color: #ffffff;
+            padding: 24px;
+            border-radius: 12px;
+        }
+
+        #missao h2 {
+            color: #ffffff;
+            margin-top: 0;
+        }
+    </style>
+    <title>Giro Motor - Quem Somos</title>
+</head>
+<body>
+    <header class="topo">
+        <a class="marca" href="index.html">GIRO<span>MOTOR</span></a>
+        <button class="btn-menu" id="btnMenu">Menu</button>
+        <nav class="menu" id="menu">
+            <a href="index.html">Início</a>
+            <a class="ativo" href="QuemSomos.html">Quem Somos</a>
+            <a href="Modelos.html">Modelos</a>
+            <a href="FichaTecnica.html">Ficha Técnica</a>
+            <a href="Comparativo.html">Comparativo</a>
+            <a href="Galeria.html">Galeria</a>
+            <a href="Midia.html">Mídia</a>
+            <a href="Eventos.html">Eventos</a>
+            <a href="Contato.html">Contato</a>
+            <a href="Garagem.html">Garagem</a>
+            <a href="https://veiculos.fipe.org.br/" target="_blank">Tabela FIPE</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <h1>Quem Somos</h1>
+            <p>A dupla por trás da Giro Motor</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>A revista</h2>
+            <p>A Giro Motor é uma revista digital fictícia sobre carros, criada como projeto da disciplina de Desenvolvimento Front-End para Web.</p>
+            <p>O site reúne um catálogo de modelos, ficha técnica, comparativo, galeria de fotos, vídeo, áudio, eventos e uma garagem onde o visitante cadastra os seus carros.</p>
+
+            <div id="missao">
+                <h2>Nossa missão</h2>
+                <p>Levar informação sobre carros de um jeito simples, bonito e fácil de navegar, tanto no computador quanto no celular.</p>
+            </div>
+
+            <h2>A dupla</h2>
+            <div class="equipe">
+                <div class="pessoa">
+                    <img src="img/leonardo.png" alt="Foto de Leonardo Balaban">
+                    <h3>Leonardo Balaban</h3>
+                    <p>Desenvolvedor front-end e designer do site. Cuidou do layout, das cores e das páginas de conteúdo.</p>
+                </div>
+                <div class="pessoa">
+                    <img src="img/matheus.jpg" alt="Foto de Matheus de Alice">
+                    <h3>Matheus de Alice</h3>
+                    <p>Desenvolvedor front-end do site. Cuidou dos formulários, da mídia e das funções em JavaScript.</p>
+                </div>
+            </div>
+
+            <p style="text-align: center; color: #6b7280; font-style: italic; margin-top: 30px;">Projeto acadêmico - 2º semestre - 2026</p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="marca" href="index.html">GIRO<span>MOTOR</span></a>
+        <p>Revista digital de carros - Desenvolvimento Front-End para Web</p>
+        <p>&copy; 2026 Leonardo Balaban e Matheus de Alice</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <title>Giro Motor - Eventos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark cabecalho">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand marca" href="index.html">GIRO<span>MOTOR</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="QuemSomos.html">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Modelos.html">Modelos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FichaTecnica.html">Ficha Técnica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Comparativo.html">Comparativo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Midia.html">Mídia</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Garagem.html">Garagem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://veiculos.fipe.org.br/" target="_blank">Tabela FIPE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <h1>Eventos</h1>
+            <p>Encontros e exposições organizados pela revista</p>
+        </section>
+
+        <section class="conteudo">
+            <div class="alert alert-success oculta" id="avisoPresenca"></div>
+
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card cartao h-100">
+                        <img class="card-img-top" src="img/mustang-gt-2.jpg" alt="Ford Mustang GT, traseira">
+                        <div class="card-body">
+                            <span class="badge bg-danger">15/11/2026</span>
+                            <h3 class="card-title h5 mt-2">Encontro de Clássicos</h3>
+                            <p class="card-text">Exposição de carros antigos, com votação do público.</p>
+                            <button class="btn btn-dark btn-presenca" value="Encontro de Clássicos">Marcar presença</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card cartao h-100">
+                        <img class="card-img-top" src="img/ranger-raptor-2.jpg" alt="Ford Ranger Raptor cinza">
+                        <div class="card-body">
+                            <span class="badge bg-danger">06/12/2026</span>
+                            <h3 class="card-title h5 mt-2">Exposição de Picapes</h3>
+                            <p class="card-text">Picapes esportivas e de fora de estrada, como a Raptor e a Hilux.</p>
+                            <button class="btn btn-dark btn-presenca" value="Exposição de Picapes">Marcar presença</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card cartao h-100">
+                        <img class="card-img-top" src="img/camaro-2.jpg" alt="Chevrolet Camaro SS branco">
+                        <div class="card-body">
+                            <span class="badge bg-danger">17/01/2027</span>
+                            <h3 class="card-title h5 mt-2">Dia dos Esportivos</h3>
+                            <p class="card-text">Mustang, Camaro e outros esportivos reunidos no mesmo lugar.</p>
+                            <button class="btn btn-dark btn-presenca" value="Dia dos Esportivos">Marcar presença</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card cartao h-100">
+                        <img class="card-img-top" src="img/hilux-gr-sport-1.jpg" alt="Toyota Hilux branca">
+                        <div class="card-body">
+                            <span class="badge bg-danger">21/02/2027</span>
+                            <h3 class="card-title h5 mt-2">Oficina da Revista</h3>
+                            <p class="card-text">Bate-papo sobre cuidados básicos com o carro, como óleo e pneus.</p>
+                            <button class="btn btn-dark btn-presenca" value="Oficina da Revista">Marcar presença</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="marca" href="index.html">GIRO<span>MOTOR</span></a>
+        <p>Revista digital de carros - Desenvolvimento Front-End para Web</p>
+        <p>&copy; 2026 Leonardo Balaban e Matheus de Alice</p>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/eventos.js"></script>
+</body>
+</html>

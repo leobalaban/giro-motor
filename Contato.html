@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <title>Giro Motor - Contato</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark cabecalho">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand marca" href="index.html">GIRO<span>MOTOR</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="QuemSomos.html">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Modelos.html">Modelos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FichaTecnica.html">Ficha Técnica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Comparativo.html">Comparativo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Midia.html">Mídia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Garagem.html">Garagem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://veiculos.fipe.org.br/" target="_blank">Tabela FIPE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <h1>Contato</h1>
+            <p>Mande sua sugestão, dúvida ou elogio para a redação</p>
+        </section>
+
+        <section class="conteudo">
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="caixa">
+                        <div class="alert alert-success oculta" id="avisoContato"></div>
+
+                        <form class="formulario" id="formContato">
+                            <label class="form-label" for="nome">Nome</label>
+                            <input class="form-control" type="text" id="nome" placeholder="Seu nome completo" required minlength="3" pattern="[A-Za-zÀ-ÿ ]+" title="Use apenas letras, com no mínimo 3.">
+
+                            <label class="form-label" for="email">E-mail</label>
+                            <input class="form-control" type="email" id="email" placeholder="nome@exemplo.com" required>
+
+                            <label class="form-label" for="telefone">Telefone (só números)</label>
+                            <input class="form-control" type="text" id="telefone" placeholder="41999998888" required pattern="[0-9]{10,11}" title="Digite 10 ou 11 números, com DDD.">
+
+                            <label class="form-label" for="assunto">Assunto</label>
+                            <select class="form-select" id="assunto" required>
+                                <option value="">Escolha um assunto</option>
+                                <option value="Sugestão de matéria">Sugestão de matéria</option>
+                                <option value="Dúvida sobre um carro">Dúvida sobre um carro</option>
+                                <option value="Eventos">Eventos</option>
+                                <option value="Outro assunto">Outro assunto</option>
+                            </select>
+
+                            <label class="form-label" for="mensagem">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="5" placeholder="Escreva sua mensagem (mínimo de 10 letras)" required minlength="10"></textarea>
+
+                            <input class="btn btn-danger mt-4" type="submit" value="Enviar mensagem">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card cartao">
+                        <div class="card-body">
+                            <h3 class="card-title">Redação Giro Motor</h3>
+                            <p class="card-text"><strong>E-mail:</strong> contato@giromotor.com.br</p>
+                            <p class="card-text"><strong>Telefone:</strong> (41) 3333-0000</p>
+                            <p class="card-text"><strong>Horário:</strong> segunda a sexta, das 9h às 18h</p>
+                            <div class="alert alert-warning mb-0">Os campos com borda vermelha ainda não estão válidos. Quando ficarem verdes, está tudo certo!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="marca" href="index.html">GIRO<span>MOTOR</span></a>
+        <p>Revista digital de carros - Desenvolvimento Front-End para Web</p>
+        <p>&copy; 2026 Leonardo Balaban e Matheus de Alice</p>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/contato.js"></script>
+</body>
+</html>

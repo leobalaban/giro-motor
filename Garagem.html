@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <title>Giro Motor - Garagem</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark cabecalho">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand marca" href="index.html">GIRO<span>MOTOR</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="QuemSomos.html">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Modelos.html">Modelos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FichaTecnica.html">Ficha Técnica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Comparativo.html">Comparativo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Midia.html">Mídia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Garagem.html">Garagem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://veiculos.fipe.org.br/" target="_blank">Tabela FIPE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <h1>Minha Garagem</h1>
+            <p>Cadastre seus carros. Eles ficam salvos mesmo se você fechar o navegador.</p>
+        </section>
+
+        <section class="conteudo">
+            <div class="caixa">
+                <form class="formulario row g-3" id="formGaragem">
+                    <div class="col-md-5">
+                        <label class="form-label" for="modelo">Modelo</label>
+                        <input class="form-control" type="text" id="modelo" placeholder="Ex.: Mustang GT" required minlength="2">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="marca">Marca</label>
+                        <select class="form-select" id="marca" required>
+                            <option value="">Escolha a marca</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Fiat">Fiat</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Jeep">Jeep</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Outra">Outra</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label" for="ano">Ano</label>
+                        <input class="form-control" type="number" id="ano" placeholder="Ex.: 2020" required min="1950" max="2027">
+                    </div>
+                    <div class="col-12">
+                        <input class="btn btn-danger" type="submit" value="Adicionar à garagem">
+                    </div>
+                </form>
+            </div>
+
+            <h2>Carros cadastrados: <span class="badge bg-danger" id="totalCarros">0</span></h2>
+
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle bg-white">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Modelo</th>
+                            <th>Marca</th>
+                            <th>Ano</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabela"></tbody>
+                </table>
+            </div>
+
+            <button class="btn btn-outline-danger" id="btnLimpar">Limpar garagem</button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="marca" href="index.html">GIRO<span>MOTOR</span></a>
+        <p>Revista digital de carros - Desenvolvimento Front-End para Web</p>
+        <p>&copy; 2026 Leonardo Balaban e Matheus de Alice</p>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/garagem.js"></script>
+</body>
+</html>

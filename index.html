@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <title>Giro Motor - Início</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark cabecalho">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand marca" href="index.html">GIRO<span>MOTOR</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="QuemSomos.html">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Modelos.html">Modelos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FichaTecnica.html">Ficha Técnica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Comparativo.html">Comparativo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Midia.html">Mídia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Garagem.html">Garagem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://veiculos.fipe.org.br/" target="_blank">Tabela FIPE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="destaque">
+            <p class="selo">Edição 2026</p>
+            <h1>Paixão por carros em cada giro</h1>
+            <p>Catálogo de modelos, fichas técnicas, comparativos, fotos e eventos para quem vive o mundo automotivo.</p>
+            <a class="btn btn-danger btn-lg" href="Modelos.html">Ver modelos</a>
+            <a class="btn btn-outline-light btn-lg" href="Garagem.html">Minha garagem</a>
+        </section>
+
+        <section class="conteudo">
+            <div class="caixa">
+                <p id="saudacao">Olá, visitante! Seja bem-vindo à Giro Motor!</p>
+                <div class="linha-nome">
+                    <input class="form-control" type="text" id="nomeVisitante" placeholder="Digite seu nome">
+                    <button class="btn btn-danger" id="btnSalvar">Salvar nome</button>
+                    <button class="btn btn-outline-secondary" id="btnApagar">Apagar nome</button>
+                </div>
+            </div>
+
+            <h2>Destaques da edição</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card cartao h-100">
+                        <img class="card-img-top" src="img/ranger-raptor-1.jpg" alt="Ford Ranger Raptor laranja">
+                        <div class="card-body">
+                            <h3 class="card-title">Ranger Raptor</h3>
+                            <p class="card-text">Conheça todos os números da picape mais brava da Ford.</p>
+                            <a class="btn btn-danger" href="FichaTecnica.html">Ver ficha técnica</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cartao h-100">
+                        <img class="card-img-top" src="img/hilux-gr-sport-1.jpg" alt="Toyota Hilux GR Sport branca">
+                        <div class="card-body">
+                            <h3 class="card-title">Raptor x Hilux</h3>
+                            <p class="card-text">Duas picapes esportivas lado a lado. Qual leva a melhor?</p>
+                            <a class="btn btn-danger" href="Comparativo.html">Comparar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cartao h-100">
+                        <img class="card-img-top" src="img/camaro-1.jpg" alt="Chevrolet Camaro amarelo">
+                        <div class="card-body">
+                            <h3 class="card-title">Galeria</h3>
+                            <p class="card-text">Fotos de Mustang, Camaro, Raptor e Hilux em alta qualidade.</p>
+                            <a class="btn btn-danger" href="Galeria.html">Ver fotos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Dica do mês</h2>
+            <button class="btn btn-dark" id="btnDica">Mostrar dica</button>
+            <div class="alert alert-warning oculta mt-3" id="caixaDica">
+                Confira o nível do óleo e a pressão dos pneus pelo menos uma vez por mês. Seu motor agradece!
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="marca" href="index.html">GIRO<span>MOTOR</span></a>
+        <p>Revista digital de carros - Desenvolvimento Front-End para Web</p>
+        <p>&copy; 2026 Leonardo Balaban e Matheus de Alice</p>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

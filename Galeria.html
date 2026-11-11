@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <title>Giro Motor - Galeria</title>
+</head>
+<body>
+    <header class="topo">
+        <a class="marca" href="index.html">GIRO<span>MOTOR</span></a>
+        <button class="btn-menu" id="btnMenu">Menu</button>
+        <nav class="menu" id="menu">
+            <a href="index.html">Início</a>
+            <a href="QuemSomos.html">Quem Somos</a>
+            <a href="Modelos.html">Modelos</a>
+            <a href="FichaTecnica.html">Ficha Técnica</a>
+            <a href="Comparativo.html">Comparativo</a>
+            <a class="ativo" href="Galeria.html">Galeria</a>
+            <a href="Midia.html">Mídia</a>
+            <a href="Eventos.html">Eventos</a>
+            <a href="Contato.html">Contato</a>
+            <a href="Garagem.html">Garagem</a>
+            <a href="https://veiculos.fipe.org.br/" target="_blank">Tabela FIPE</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <h1>Galeria</h1>
+            <p>Clique em uma foto para ver em tamanho grande</p>
+        </section>
+
+        <section class="conteudo">
+            <div class="galeria">
+                <figure>
+                    <img class="foto" src="img/ranger-raptor-1.jpg" alt="Ford Ranger Raptor laranja">
+                    <figcaption>Ford Ranger Raptor laranja</figcaption>
+                </figure>
+                <figure>
+                    <img class="foto" src="img/ranger-raptor-2.jpg" alt="Ford Ranger Raptor cinza">
+                    <figcaption>Ford Ranger Raptor cinza</figcaption>
+                </figure>
+                <figure>
+                    <img class="foto" src="img/hilux-gr-sport-1.jpg" alt="Toyota Hilux GR Sport branca">
+                    <figcaption>Toyota Hilux GR Sport branca</figcaption>
+                </figure>
+                <figure>
+                    <img class="foto" src="img/hilux-gr-sport-2.jpg" alt="Toyota Hilux GR Sport em evento">
+                    <figcaption>Toyota Hilux GR Sport em evento</figcaption>
+                </figure>
+                <figure>
+                    <img class="foto" src="img/mustang-gt-1.jpg" alt="Ford Mustang GT, vista da frente">
+                    <figcaption>Ford Mustang GT, vista da frente</figcaption>
+                </figure>
+                <figure>
+                    <img class="foto" src="img/mustang-gt-2.jpg" alt="Ford Mustang GT, vista de trás">
+                    <figcaption>Ford Mustang GT, vista de trás</figcaption>
+                </figure>
+                <figure>
+                    <img class="foto" src="img/camaro-1.jpg" alt="Chevrolet Camaro amarelo">
+                    <figcaption>Chevrolet Camaro amarelo</figcaption>
+                </figure>
+                <figure>
+                    <img class="foto" src="img/camaro-2.jpg" alt="Chevrolet Camaro SS branco">
+                    <figcaption>Chevrolet Camaro SS branco</figcaption>
+                </figure>
+            </div>
+
+            <p style="margin-top: 30px; color: #6b7280;">Fotos do Wikimedia Commons, licença CC BY-SA 4.0. Autores: Ethan Llamas, JoachimKohler-HB, LuvsMG481, SF-R, Vauxford, Ermell e Calreyn88.</p>
+        </section>
+
+        <div class="visualizador oculta" id="visualizador">
+            <img id="fotoGrande" src="img/ranger-raptor-1.jpg" alt="Foto ampliada">
+            <p id="legendaGrande"></p>
+            <button id="btnFechar">Fechar</button>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <a class="marca" href="index.html">GIRO<span>MOTOR</span></a>
+        <p>Revista digital de carros - Desenvolvimento Front-End para Web</p>
+        <p>&copy; 2026 Leonardo Balaban e Matheus de Alice</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/galeria.js"></script>
+</body>
+</html>

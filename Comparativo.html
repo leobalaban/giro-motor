@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <title>Giro Motor - Comparativo</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark cabecalho">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand marca" href="index.html">GIRO<span>MOTOR</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="QuemSomos.html">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Modelos.html">Modelos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FichaTecnica.html">Ficha Técnica</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Comparativo.html">Comparativo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Midia.html">Mídia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Garagem.html">Garagem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://veiculos.fipe.org.br/" target="_blank">Tabela FIPE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <h1>Comparativo</h1>
+            <p>Ford Ranger Raptor x Toyota Hilux GR-S</p>
+        </section>
+
+        <section class="conteudo">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card cartao h-100">
+                        <img class="card-img-top" src="img/ranger-raptor-2.jpg" alt="Ford Ranger Raptor cinza">
+                        <div class="card-body">
+                            <h3 class="card-title">Ford Ranger Raptor</h3>
+                            <p class="card-text">Motor V6 a gasolina, foco em desempenho e suspensão para terra.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card cartao h-100">
+                        <img class="card-img-top" src="img/hilux-gr-sport-2.jpg" alt="Toyota Hilux GR Sport em evento">
+                        <div class="card-body">
+                            <h3 class="card-title">Toyota Hilux GR-S</h3>
+                            <p class="card-text">Motor turbodiesel, conhecido pela força e pela durabilidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Tabela comparativa</h2>
+            <button class="btn btn-danger mb-3" id="btnDestacar">Destacar o melhor valor</button>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle bg-white">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Item</th>
+                            <th>Ford Ranger Raptor</th>
+                            <th>Toyota Hilux GR-S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Motor</th>
+                            <td>3.0 V6 biturbo</td>
+                            <td>2.8 turbodiesel</td>
+                        </tr>
+                        <tr>
+                            <th>Combustível</th>
+                            <td>Gasolina</td>
+                            <td>Diesel</td>
+                        </tr>
+                        <tr>
+                            <th>Potência (cv)</th>
+                            <td id="potenciaRaptor">397</td>
+                            <td id="potenciaHilux">224</td>
+                        </tr>
+                        <tr>
+                            <th>Torque (Nm)</th>
+                            <td id="torqueRaptor">583</td>
+                            <td id="torqueHilux">550</td>
+                        </tr>
+                        <tr>
+                            <th>Marchas</th>
+                            <td id="marchasRaptor">10</td>
+                            <td id="marchasHilux">6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="alert alert-info">Os valores são da linha 2024 e podem variar conforme a versão. Confira sempre no site oficial de cada marca.</div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="marca" href="index.html">GIRO<span>MOTOR</span></a>
+        <p>Revista digital de carros - Desenvolvimento Front-End para Web</p>
+        <p>&copy; 2026 Leonardo Balaban e Matheus de Alice</p>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/comparativo.js"></script>
+</body>
+</html>
